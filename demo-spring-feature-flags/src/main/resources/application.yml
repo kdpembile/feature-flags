@@ -1,3 +1,7 @@
 spring:
   application:
     name: demo-spring-feature-flags
+
+launch-darkly:
+  sdk-key: ${SDK_KEY}
+  flag-upper-case: ${LD_FEATURE_1:app.ft.1.enabled}
